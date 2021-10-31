@@ -1,0 +1,22 @@
+{
+  "name": "tboiler-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "tboiler": "./build/bin/cli.js"
+  },
+  "scripts": {
+    "build": "rimraf ./build ./types & npx tsc",
+    "make-link": "rimraf ./build ./types & npx tsc & npm link"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.4",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "commander": "^8.3.0"
+  }
+}
